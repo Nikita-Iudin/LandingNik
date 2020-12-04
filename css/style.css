@@ -7,7 +7,7 @@ body {
 
 .header {
     width:100%;
-    max-width:1180px;
+    max-width:1550px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -152,7 +152,8 @@ main {
 }
 
 .about_photo1 {
-    margin-left: 50px;
+    padding-right:1150px;
+    
     width:580px;
     height:550px;
     
@@ -169,7 +170,7 @@ main {
 
 .about_text {
     padding-left: 230px;
-    padding-top: 170px;
+    padding-top: 100px;
 }
 
 section {
@@ -196,8 +197,8 @@ padding: 50 0 50 0;
     }
 
     .about_text {
-        padding-left: 180px;
-        padding-top: 250px;
+        
+        
     }
 
 
@@ -208,8 +209,7 @@ padding: 50 0 50 0;
     }
 
     .about_text {
-        padding-left: 180px;
-        padding-top: 250px;
+      
     }
 
 }
@@ -260,9 +260,8 @@ section {
 }
 
 .about_photo1 {
-    margin-left: 50px;
-    width:300px;
-    height:300px;
+    
+   
     
 }
 
