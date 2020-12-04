@@ -174,13 +174,19 @@ main {
 
 section {
     display: flex;
+    justify-content: space-between;
     
 }
 .content1 {
-    background: rgb(44, 214, 44);
+    width:750px;
+    height:735px;
+    background-image: url(../img/Главная\ картинка\ 1.png);
+    background-size: contain;
 }
 .content2 {
     background: red;
+    width:10%;
+
 }
 
 @media (max-width:1367px){
