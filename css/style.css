@@ -1,13 +1,48 @@
+@font-face {
+    font-family: "FuturaRegular";
+    src: url("../fonts/FuturaRegular/FuturaRegular.eot");
+    src: url("../fonts/FuturaRegular/FuturaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/FuturaRegular/FuturaRegular.woff") format("woff"),
+    url("../fonts/FuturaRegular/FuturaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "FuturaBold";
+    src: url("../fonts/FuturaBold/FuturaBold.eot");
+    src: url("../fonts/FuturaBold/FuturaBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/FuturaBold/FuturaBold.woff") format("woff"),
+    url("../fonts/FuturaBold/FuturaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x:hidden;
     
 }
+
+html{
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+  body
+  {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
 
 
 .header {
     width:100%;
-    max-width:1550px;
+    
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -124,9 +159,12 @@ font-size: 50px;
 }
 
 .btn {
+    display: block;
+    text-align: center;
+    max-width:100px;
     background-color: #842AAE;
     border-radius: 10px;
-    padding: 10px 15px;
+    padding: 20px 35px; 
     color: #fff;
     border: none;
     font-weight: 700;
@@ -138,22 +176,25 @@ main {
     flex-direction: column;
 }
 
+
+
 .main-about  {
     max-width:1920px;
     margin:0 auto;
     display:flex;
-    padding:100px 0px 100px 0px;
+    
 }
 
 .about_photo {
     margin-left: 50px;
     width:580px;
     height:550px;
+    padding:50px 0px 100px 0px;
 }
 
 .about_photo1 {
-    padding-right:1150px;
     
+    padding:0px;
     width:580px;
     height:550px;
     
@@ -169,8 +210,8 @@ main {
 }
 
 .about_text {
-    padding-left: 230px;
-    padding-top: 100px;
+    padding-left: 100px;
+    padding-top: 150px;
 }
 
 section {
@@ -189,6 +230,135 @@ section {
     width:10%;
 
 }
+
+/*Обо мне*/
+
+.about {
+    max-width:927px;
+    padding: 0 0 50px 248px; 
+    line-height: 1.5;
+    
+}
+
+.about>h2 {
+    font-family: "FuturaBold";
+    font-weight: 700;
+    font-size: 55px;
+
+}
+
+.about>h3 {
+ 
+    font-size: 25px;
+
+}
+
+/*Виды сайтов и цены*/
+.container__price_h1 {
+    padding: 128px 0 50px 100px;
+   
+}
+
+.price1 {
+    font-size: 75px;
+    color: #fff;
+    text-shadow: 0 0 5px black; 
+    font-family: "FuturaBold";
+    font-weight: 700;
+    
+  
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+.services>span {
+    padding: 56px 0 0 0;
+}
+
+.btn_project {
+ max-width: 414px;
+ color:#A419D4;
+ background-color: #fff;
+ border: 2px solid #A419D4;
+ padding: 47px 45px 47px 45px;
+ font-size: 25px;
+ margin: 94px 0 0 0; 
+}
+
+
+
+/*Мои работы*/ 
+
+.block1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.block2 {
+    display: flex;
+
+}
+
+.portfolio_header>h1 {
+    padding-left:248px;
+    font-size: 65px;
+}
+
+.portfolio_photo {
+    padding: 152px 0px 0px 248px;
+
+}
+
+.portfolio_photo1 {
+    width:900px;
+    height:400px;
+
+}
+
+
+.text_photo {
+    
+    padding: 152px 0px 30px 86px;
+}
+
+.text_photo>h2 {
+    padding: 0px 0px 0px 0px;
+    
+}
+
+.text_photo>h2 {
+    font-family: "FuturaBold";
+    font-weight: 700;
+    font-size: 45px;
+}
+
+h4>li {
+    font-family: 'Montserrat', sans-serif;
+ font-size: 30px;
+ padding: 23px 0 0 0;
+ font-weight: 300;
+
+}
+
+.btn1 {
+    text-align: center;
+    max-width: 150px;
+    margin: 31px 0 0 0;
+    padding: 35px 10px 35px 10px;
+    border: 2px solid #000000;
+    font-size: 15ыpx;
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
 
 @media (max-width:1367px){
 
@@ -212,7 +382,14 @@ padding: 50 0 50 0;
       
     }
 
+    .about_text {
+        padding-left: 130px;
+        padding-top: 100px;
+    }
+
 }
+
+
 
 @media (max-width:500px){
 
@@ -261,16 +438,100 @@ section {
 
 .about_photo1 {
     
-   
+    margin-left: 15px;
+    width:380px;
+    height:350px;
     
 }
+
 
 
 .about_text {
     flex-direction: column;
 }
 
+.about_text {
+    padding-left: 15px;
+    padding-top: 30px;
+}
 
+.about_text>h1 {
+    font-size: 30px;
+}
+
+.about_text>p {
+    font-size: 15px;
+    max-width:300px;
+}
+
+/*Мои работы*/
+
+.block1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.block2 {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.portfolio_header>h1 {
+    padding-left:248px;
+    font-size: 65px;
+}
+
+.portfolio_photo {
+    padding: 0px 0px 0px 0px;
+
+}
+
+.portfolio_photo1 {
+    width:400px;
+    height:200px;
+    padding: 0px 0px 0px 0px;
+
+} 
+
+.text_photo {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0px 0px 30px 86px;
+}
+
+.text_photo>h2 {
+    padding: 0px 0px 0px 0px;
+    
+}
+
+.text_photo>h2 {
+    font-family: "FuturaBold";
+    font-weight: 700;
+    font-size: 45px;
+}
+
+h4>li {
+    font-family: 'Montserrat', sans-serif;
+ font-size: 30px;
+ padding: 23px 0 0 0;
+ font-weight: 300;
+
+}
+
+.btn1 {
+    text-align: center;
+    max-width: 298px;
+    margin: 31px 0 0 0;
+    padding: 55px 23px 55px 23px;
+    border: 2px solid #000000;
+    font-size: 35px;
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+}
 
 
 }
